@@ -6,7 +6,7 @@
 >
 
     <LinearLayout
-        android:layout_marginLeft="@dimen/linear_layout__name_margin_left"
+        android:layout_marginLeft="@dimen/linear_layout_margin_left"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -25,7 +25,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_marginLeft="@dimen/linear_layout__class_margin_left"
+        android:layout_marginLeft="@dimen/linear_layout_margin_left"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
