@@ -7,4 +7,5 @@
     <dimen name="edit_text_width">250dp</dimen>
     <dimen name="edit_text_height">50dp</dimen>
     <dimen name="linear_layout__name_margin_left">10dp</dimen>
+    <dimen name="linear_layout__class_margin_left">10dp</dimen>
 </resources>

@@ -22,6 +22,24 @@
             android:layout_width="@dimen/edit_text_width"
             android:layout_height="@dimen/edit_text_height" />
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/linear_layout__class_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="@dimen/text_view_width"
+           android:layout_height="@dimen/text_view_height"
+           android:text="@string/label_class"
+           android:textColor="@color/colorText"
+       />
+
+        <EditText
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/edit_text_height" />
+    </LinearLayout>
 </LinearLayout>
 
 
