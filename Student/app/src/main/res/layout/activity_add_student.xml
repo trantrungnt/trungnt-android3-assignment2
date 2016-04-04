@@ -3,9 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    
 >
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/text_view_width"
+            android:layout_height="@dimen/text_view_height"
+            android:text="@string/label_name"
+            android:textColor="@color/colorText"
+        />
+    </LinearLayout>
 </LinearLayout>
 
 
