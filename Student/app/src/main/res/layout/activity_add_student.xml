@@ -6,6 +6,7 @@
 >
 
     <LinearLayout
+        android:layout_marginLeft="@dimen/linear_layout__name_margin_left"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,6 +17,10 @@
             android:text="@string/label_name"
             android:textColor="@color/colorText"
         />
+        
+        <EditText
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/edit_text_height" />
     </LinearLayout>
 </LinearLayout>
 
