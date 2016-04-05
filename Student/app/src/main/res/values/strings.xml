@@ -26,4 +26,5 @@
     <string name="label_radio_button_male">Male</string>
     <string name="label_radio_button_female">Female</string>
     <string name="label_text_view_gender">Gender: </string>
+    <string name="label_button_save">Save</string>
 </resources>

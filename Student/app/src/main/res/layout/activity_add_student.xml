@@ -143,7 +143,6 @@
                 <RadioButton
                     android:textColor="@color/colorText"
                     android:text="@string/label_radio_button_male"
-                    android:checked="true"
                     android:layout_width="@dimen/radio_button_male_width"
                     android:layout_height="@dimen/radio_button_male_height" />
                 <RadioButton
@@ -153,6 +152,12 @@
                     android:layout_height="@dimen/radio_button_female_height" />
             </RadioGroup>
         </LinearLayout>
+        <Button
+            android:layout_gravity="center"
+            android:textSize="@dimen/button_save_text_size"
+            android:text="@string/label_button_save"
+            android:layout_width="@dimen/button_save_ưidth"
+            android:layout_height="@dimen/button_save_height" />
     </LinearLayout>
 </ScrollView>
 
