@@ -98,22 +98,26 @@
                 android:textColor="@color/colorText"/>
                 
                 <CheckBox
+                    android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_book"
                     android:layout_width="@dimen/checkbox_width"
                     android:layout_height="@dimen/checkbox_height" />
 
                 <CheckBox
+                    android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_game"
                     android:layout_width="@dimen/checkbox_game_width"
                     android:layout_height="@dimen/checkbox_game_height" />
 
                 <CheckBox
+                    android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_music"
                     android:checked="true"
                     android:layout_width="@dimen/checkbox_width"
                     android:layout_height="@dimen/checkbox_height" />
 
                 <CheckBox
+                    android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_football"
                     android:layout_width="@dimen/checkbox_football_width"
                     android:layout_height="@dimen/checkbox_football_height" />
@@ -136,11 +140,13 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:textColor="@color/colorText"
                     android:text="@string/label_radio_button_male"
                     android:checked="true"
                     android:layout_width="@dimen/radio_button_male_width"
                     android:layout_height="@dimen/radio_button_male_height" />
                 <RadioButton
+                    android:textColor="@color/colorText"
                     android:text="@string/label_radio_button_female"
                     android:layout_width="@dimen/radio_button_female_width"
                     android:layout_height="@dimen/radio_button_female_height" />
