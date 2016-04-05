@@ -24,6 +24,7 @@
                 />
 
             <EditText
+                android:id="@+id/editTextName"
                 android:layout_width="@dimen/edit_text_width"
                 android:layout_height="@dimen/edit_text_height" />
         </LinearLayout>
@@ -42,6 +43,7 @@
                 />
 
             <EditText
+                android:id="@+id/editTextClass"
                 android:layout_width="@dimen/edit_text_width"
                 android:layout_height="@dimen/edit_text_height" />
         </LinearLayout>
