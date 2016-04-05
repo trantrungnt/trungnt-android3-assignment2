@@ -17,6 +17,14 @@
         <item>Quang Ninh</item>
         <item>Lai Chau</item>
         <item>Mai Chau</item>
+        <item>Ha Giang</item>
+        <item>Ben Tre</item>
+        <item>Ninh Binh</item>
+        <item>Son La</item>
+        <item>Bac Giang</item>
+        <item>Tien Giang</item>
+        <item>Nha Trang</item>
+        <item>Da Lat</item>
     </string-array>
     <string name="label_hobby">Hobby: </string>
     <string name="label_checkbox_book">Book</string>
