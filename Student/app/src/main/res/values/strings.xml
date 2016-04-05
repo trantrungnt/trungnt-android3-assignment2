@@ -23,4 +23,7 @@
     <string name="label_checkbox_football">Football</string>
     <string name="label_checkbox_game">Game</string>
     <string name="label_checkbox_music">Music</string>
+    <string name="label_radio_button_male">Male</string>
+    <string name="label_radio_button_female">Female</string>
+    <string name="label_text_view_gender">Gender: </string>
 </resources>

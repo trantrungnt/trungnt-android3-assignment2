@@ -22,4 +22,8 @@
     <dimen name="checkbox_football_height">30dp</dimen>
     <dimen name="text_view_hobby_width">50dp</dimen>
     <dimen name="text_view_hobby_height">30dp</dimen>
+    <dimen name="radio_button_male_width">80dp</dimen>
+    <dimen name="radio_button_male_height">30dp</dimen>
+    <dimen name="radio_button_female_width">80dp</dimen>
+    <dimen name="radio_button_female_height">30dp</dimen>
 </resources>

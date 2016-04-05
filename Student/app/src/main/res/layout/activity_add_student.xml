@@ -109,6 +109,7 @@
 
                 <CheckBox
                     android:text="@string/label_checkbox_music"
+                    android:checked="true"
                     android:layout_width="@dimen/checkbox_width"
                     android:layout_height="@dimen/checkbox_height" />
 
@@ -116,6 +117,34 @@
                     android:text="@string/label_checkbox_football"
                     android:layout_width="@dimen/checkbox_football_width"
                     android:layout_height="@dimen/checkbox_football_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/linear_layout_margin_left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/text_view_width"
+                android:layout_height="@dimen/text_view_height"
+                android:text="@string/label_text_view_gender"
+                android:textColor="@color/colorText"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:text="@string/label_radio_button_male"
+                    android:checked="true"
+                    android:layout_width="@dimen/radio_button_male_width"
+                    android:layout_height="@dimen/radio_button_male_height" />
+                <RadioButton
+                    android:text="@string/label_radio_button_female"
+                    android:layout_width="@dimen/radio_button_female_width"
+                    android:layout_height="@dimen/radio_button_female_height" />
+            </RadioGroup>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
