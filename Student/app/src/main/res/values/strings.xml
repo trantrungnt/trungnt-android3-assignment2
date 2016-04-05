@@ -3,4 +3,19 @@
     <string name="label_name">Name: </string>
     <string name="label_class">Class: </string>
     <string name="label_birthday">Birthday: </string>
+    <string name="label_birthday_place">Birthday Place: </string>
+    <string-array name="arr_brithday_place">
+        <item>Ha Noi</item>
+        <item>Nam Dinh</item>
+        <item>Thai Binh</item>
+        <item>Hai Duong</item>
+        <item>Ho Chi Minh City</item>
+        <item>Da Nang</item>
+        <item>Nghe An</item>
+        <item>Ha Nam</item>
+        <item>Hai Phong</item>
+        <item>Quang Ninh</item>
+        <item>Lai Chau</item>
+        <item>Mai Chau</item>
+    </string-array>
 </resources>
