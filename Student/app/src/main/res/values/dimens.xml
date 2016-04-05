@@ -14,4 +14,6 @@
     <dimen name="spinner_marginLeft">50dp</dimen>
     <dimen name="text_view_birthday_place_width">100dp</dimen>
     <dimen name="text_view__birthday_place_height">30dp</dimen>
+    <dimen name="checkbox_width">80dp</dimen>
+    <dimen name="checkbox_height">30dp</dimen>
 </resources>

@@ -96,6 +96,11 @@
                 android:layout_height="@dimen/text_view__birthday_place_height"
                 android:text="@string/label_hobby"
                 android:textColor="@color/colorText"
+                
+                <CheckBox
+                    android:text="@string/label_checkbox_book"
+                    android:layout_width="@dimen/checkbox_width"
+                    android:layout_height="@dimen/checkbox_height" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
