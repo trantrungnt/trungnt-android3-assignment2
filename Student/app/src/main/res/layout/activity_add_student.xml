@@ -153,6 +153,7 @@
             </RadioGroup>
         </LinearLayout>
         <Button
+            android:id="@+id/btnSave"
             android:layout_gravity="center"
             android:textSize="@dimen/button_save_text_size"
             android:text="@string/label_button_save"
