@@ -85,9 +85,19 @@
             </Spinner>
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/linear_layout_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/text_view_birthday_place_width"
+                android:layout_height="@dimen/text_view__birthday_place_height"
+                android:text="@string/label_hobby"
+                android:textColor="@color/colorText"
+        </LinearLayout>
     </LinearLayout>
-
-
 </ScrollView>
 
 

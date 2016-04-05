@@ -18,4 +18,5 @@
         <item>Lai Chau</item>
         <item>Mai Chau</item>
     </string-array>
+    <string name="label_hobby">Hobby: </string>
 </resources>
