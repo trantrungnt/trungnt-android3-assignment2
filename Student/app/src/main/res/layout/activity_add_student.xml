@@ -92,15 +92,30 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="@dimen/text_view_birthday_place_width"
-                android:layout_height="@dimen/text_view__birthday_place_height"
+                android:layout_width="@dimen/text_view_hobby_width"
+                android:layout_height="@dimen/text_view_hobby_height"
                 android:text="@string/label_hobby"
-                android:textColor="@color/colorText"
+                android:textColor="@color/colorText"/>
                 
                 <CheckBox
                     android:text="@string/label_checkbox_book"
                     android:layout_width="@dimen/checkbox_width"
                     android:layout_height="@dimen/checkbox_height" />
+
+                <CheckBox
+                    android:text="@string/label_checkbox_game"
+                    android:layout_width="@dimen/checkbox_game_width"
+                    android:layout_height="@dimen/checkbox_game_height" />
+
+                <CheckBox
+                    android:text="@string/label_checkbox_music"
+                    android:layout_width="@dimen/checkbox_width"
+                    android:layout_height="@dimen/checkbox_height" />
+
+                <CheckBox
+                    android:text="@string/label_checkbox_football"
+                    android:layout_width="@dimen/checkbox_football_width"
+                    android:layout_height="@dimen/checkbox_football_height" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
