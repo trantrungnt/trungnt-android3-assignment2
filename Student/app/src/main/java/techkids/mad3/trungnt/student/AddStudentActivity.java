@@ -21,7 +21,7 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
         int id = v.getId();
         if (id == R.id.btnSave)
         {
-
+            
         }
     }
 }
