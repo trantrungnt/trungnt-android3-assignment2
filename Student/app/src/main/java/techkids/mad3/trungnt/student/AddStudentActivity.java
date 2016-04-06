@@ -49,7 +49,7 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
             if (editTextName.getText().toString().isEmpty()
              || editTextName.getText().length() == 0
              || editTextClass.getText().toString().isEmpty()
-             || editTextClass.getText().length() ==0
+             || editTextClass.getText().length() == 0
             )
 
             {

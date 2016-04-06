@@ -146,11 +146,13 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/radioButtonMale"
                     android:textColor="@color/colorText"
                     android:text="@string/label_radio_button_male"
                     android:layout_width="@dimen/radio_button_male_width"
                     android:layout_height="@dimen/radio_button_male_height" />
                 <RadioButton
+                    android:id="@+id/radioButtonFemale"
                     android:textColor="@color/colorText"
                     android:text="@string/label_radio_button_female"
                     android:layout_width="@dimen/radio_button_female_width"
