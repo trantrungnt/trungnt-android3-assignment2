@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -21,6 +22,7 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
     EditText editTextName, editTextClass, editTextBirthday;
     DatePickerDialog datePickerDialogBirthday;
     SimpleDateFormat dateFormatter;
+    RadioButton radioButtonMale, radioButtonFemale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         editTextName = (EditText) this.findViewById(R.id.editTextName);
         editTextClass = (EditText) this.findViewById(R.id.editTextClass);
+        radioButtonMale = (RadioButton) this.findViewById(R.id.radioButtonMale);
+        radioButtonFemale = (RadioButton) this.findViewById(R.id.radioButtonFemale);
 
         int id = v.getId();
 
@@ -50,6 +54,7 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
              || editTextName.getText().length() == 0
              || editTextClass.getText().toString().isEmpty()
              || editTextClass.getText().length() == 0
+             || (radioButtonMale.isChecked() == false && radioButtonFemale.isChecked()==false)
             )
 
             {
