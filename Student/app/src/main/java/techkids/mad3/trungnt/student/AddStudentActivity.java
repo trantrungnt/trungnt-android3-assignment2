@@ -80,6 +80,7 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
+    //dinh nghia phuong thuc hien thi Hop thoai Calendar trong editTextBirthday
     private void setDataDatePickerDialogBirthday()
     {
         editTextBirthday = (EditText) this.findViewById(R.id.editTextBirthday);
@@ -96,6 +97,5 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
             }
 
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
-
     }
 }
