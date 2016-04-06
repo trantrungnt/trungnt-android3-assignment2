@@ -6,14 +6,21 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class AddStudentActivity extends AppCompatActivity implements View.OnClickListener{
     Button btnSave;
     EditText editTextName, editTextClass, editTextBirthday;
     DatePickerDialog datePickerDialogBirthday;
+    SimpleDateFormat dateFormatter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +28,9 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_add_student);
         btnSave = (Button) this.findViewById(R.id.btnSave);
         btnSave.setOnClickListener(this);
+
+        dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+        setDataDatePickerDialogBirthday();
     }
 
     @Override
@@ -29,6 +39,10 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
         editTextClass = (EditText) this.findViewById(R.id.editTextClass);
 
         int id = v.getId();
+
+        if (id == R.id.editTextBirthday)
+            datePickerDialogBirthday.show();
+
         if (id == R.id.btnSave)
         {
 
@@ -64,5 +78,24 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
                 //luu du lieu hoac hien thi du lieu ....
             }
         }
+    }
+
+    private void setDataDatePickerDialogBirthday()
+    {
+        editTextBirthday = (EditText) this.findViewById(R.id.editTextBirthday);
+        editTextBirthday.setOnClickListener(this);
+        editTextBirthday.setInputType(InputType.TYPE_NULL);
+
+        Calendar newCalendar = Calendar.getInstance();
+        datePickerDialogBirthday = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                Calendar newDate = Calendar.getInstance();
+                newDate.set(year, monthOfYear, dayOfMonth);
+                editTextBirthday.setText(dateFormatter.format(newDate.getTime()));
+            }
+
+        },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
+
     }
 }
