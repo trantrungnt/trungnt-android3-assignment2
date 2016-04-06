@@ -7,6 +7,7 @@
 
     <LinearLayout
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/scroll_view_margin_top"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -59,11 +60,12 @@
                 android:layout_height="@dimen/text_view_height"
                 android:text="@string/label_birthday"
                 android:textColor="@color/colorText"
-                />
-            <DatePicker
-                android:layout_width="@dimen/date_picker_width"
-                android:layout_height="wrap_content">
-            </DatePicker>
+            />
+
+            <EditText
+                android:id="@+id/editTextBirthday"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height" />
         </LinearLayout>
 
         <LinearLayout
@@ -157,6 +159,7 @@
         </LinearLayout>
         <Button
             android:id="@+id/btnSave"
+            android:layout_marginTop="@dimen/button_save_margin_top"
             android:layout_gravity="center"
             android:textSize="@dimen/button_save_text_size"
             android:text="@string/label_button_save"

@@ -1,6 +1,7 @@
 package techkids.mad3.trungnt.student;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +12,8 @@ import android.widget.EditText;
 
 public class AddStudentActivity extends AppCompatActivity implements View.OnClickListener{
     Button btnSave;
-    EditText editTextName, editTextClass;
+    EditText editTextName, editTextClass, editTextBirthday;
+    DatePickerDialog datePickerDialogBirthday;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
