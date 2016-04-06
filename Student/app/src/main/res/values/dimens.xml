@@ -30,5 +30,5 @@
     <dimen name="button_save_height">30dp</dimen>
     <dimen name="button_save_text_size">10dp</dimen>
     <dimen name="button_save_margin_top">150dp</dimen>
-    <dimen name="scroll_view_margin_top">50dp</dimen>
+    <dimen name="linear_layout_margin_top">50dp</dimen>
 </resources>
