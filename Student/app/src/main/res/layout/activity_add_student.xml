@@ -82,6 +82,7 @@
                 android:textColor="@color/colorText"
                 />
             <Spinner
+                android:id="@+id/spinnerBirthdayPlace"
                 android:entries="@array/arr_brithday_place"
                 android:spinnerMode="dialog"
                 android:layout_marginLeft="@dimen/spinner_marginLeft"
@@ -103,18 +104,21 @@
                 android:textColor="@color/colorText"/>
                 
                 <CheckBox
+                    android:id="@+id/checkBook"
                     android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_book"
                     android:layout_width="@dimen/checkbox_width"
                     android:layout_height="@dimen/checkbox_height" />
 
                 <CheckBox
+                    android:id="@+id/checkGame"
                     android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_game"
                     android:layout_width="@dimen/checkbox_game_width"
                     android:layout_height="@dimen/checkbox_game_height" />
 
                 <CheckBox
+                    android:id="@+id/checkMusic"
                     android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_music"
                     android:checked="true"
@@ -122,6 +126,7 @@
                     android:layout_height="@dimen/checkbox_height" />
 
                 <CheckBox
+                    android:id="@+id/checkFootBall"
                     android:textColor="@color/colorText"
                     android:text="@string/label_checkbox_football"
                     android:layout_width="@dimen/checkbox_football_width"

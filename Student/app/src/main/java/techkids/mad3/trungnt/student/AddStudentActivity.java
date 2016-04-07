@@ -4,14 +4,18 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -23,6 +27,9 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
     DatePickerDialog datePickerDialogBirthday;
     SimpleDateFormat dateFormatter;
     RadioButton radioButtonMale, radioButtonFemale;
+    Spinner spinnerBirthdayPlace;
+    CheckBox checkMusic;
+    RadioButton radioButtonGender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +46,17 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         editTextName = (EditText) this.findViewById(R.id.editTextName);
         editTextClass = (EditText) this.findViewById(R.id.editTextClass);
+        editTextBirthday = (EditText) this.findViewById(R.id.editTextBirthday);
+        spinnerBirthdayPlace = (Spinner) this.findViewById(R.id.spinnerBirthdayPlace);
         radioButtonMale = (RadioButton) this.findViewById(R.id.radioButtonMale);
         radioButtonFemale = (RadioButton) this.findViewById(R.id.radioButtonFemale);
+        /*spinnerBirthdayPlace.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
+
+            }
+        });*/
+
 
         int id = v.getId();
 
@@ -81,6 +97,20 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
             }else
             {
                 //luu du lieu hoac hien thi du lieu ....
+
+                //String name = editTextName.getText().toString();
+                //String className = editTextClass.getText().toString();
+                //String birthday = editTextBirthday.getText().toString();
+                //String birthdayPlace = spinnerBirthdayPlace.getSelectedItem().toString();
+
+
+                //day du lieu sinh vien vao intent va bundle
+                Student student = new Student("Nguyen Tran Trung", "MAD3", "18-02-1986", "Ha Noi", 1 , 1);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("student1", student);
+                Intent intentDisplay = new Intent(AddStudentActivity.this, DisplayActivity.class);
+                intentDisplay.putExtras(bundle);
+                startActivity(intentDisplay);
             }
         }
     }
