@@ -10,7 +10,7 @@ import static techkids.mad3.trungnt.student.R.*;
  * Created by TrungNT on 4/6/2016.
  */
 public class DisplayActivity extends AppCompatActivity {
-    TextView txtName, txtClass;
+    TextView txtName, txtClass, txtBirthdayPlace;
     Student student;
 
     @Override
@@ -24,8 +24,10 @@ public class DisplayActivity extends AppCompatActivity {
         student = (Student) bundle.getSerializable("student1");
         txtName = (TextView) this.findViewById(R.id.txtName);
         txtClass = (TextView) this.findViewById(R.id.txtClass);
+        txtBirthdayPlace = (TextView) this.findViewById(id.txtBirthdayPlace);
         txtName.setText(student.getNameStudent());
         txtClass.setText(student.getClassName());
+        txtBirthdayPlace.setText(student.getBirthdayPlace());
     }
 
 }

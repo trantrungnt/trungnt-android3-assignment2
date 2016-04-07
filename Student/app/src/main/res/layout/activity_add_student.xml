@@ -84,7 +84,7 @@
             <Spinner
                 android:id="@+id/spinnerBirthdayPlace"
                 android:entries="@array/arr_brithday_place"
-                android:spinnerMode="dialog"
+                android:spinnerMode="dropdown"
                 android:layout_marginLeft="@dimen/spinner_marginLeft"
                 android:layout_width="@dimen/spinner_width"
                 android:layout_height="@dimen/spinner_height">

@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
@@ -47,15 +46,10 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
         editTextName = (EditText) this.findViewById(R.id.editTextName);
         editTextClass = (EditText) this.findViewById(R.id.editTextClass);
         editTextBirthday = (EditText) this.findViewById(R.id.editTextBirthday);
-        spinnerBirthdayPlace = (Spinner) this.findViewById(R.id.spinnerBirthdayPlace);
         radioButtonMale = (RadioButton) this.findViewById(R.id.radioButtonMale);
         radioButtonFemale = (RadioButton) this.findViewById(R.id.radioButtonFemale);
-        /*spinnerBirthdayPlace.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
-
-            }
-        });*/
+        spinnerBirthdayPlace = (Spinner) this.findViewById(R.id.spinnerBirthdayPlace);
+        spinnerBirthdayPlace.setOnItemSelectedListener(new CustomOnItemSelectedListener());
 
 
         int id = v.getId();
@@ -101,11 +95,11 @@ public class AddStudentActivity extends AppCompatActivity implements View.OnClic
                 //String name = editTextName.getText().toString();
                 //String className = editTextClass.getText().toString();
                 //String birthday = editTextBirthday.getText().toString();
-                //String birthdayPlace = spinnerBirthdayPlace.getSelectedItem().toString();
+                String birthdayPlace = spinnerBirthdayPlace.getSelectedItem().toString();
 
 
                 //day du lieu sinh vien vao intent va bundle
-                Student student = new Student("Nguyen Tran Trung", "MAD3", "18-02-1986", "Ha Noi", 1 , 1);
+                Student student = new Student("Nguyen Tran Trung", "MAD3", "18-02-1986", birthdayPlace, 1 , 1);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("student1", student);
                 Intent intentDisplay = new Intent(AddStudentActivity.this, DisplayActivity.class);
